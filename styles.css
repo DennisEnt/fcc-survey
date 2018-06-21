@@ -24,3 +24,7 @@ input {
   border-radius: 5px;
   font-size: 14px;
 }
+
+#age {
+  width: 50px;
+}
