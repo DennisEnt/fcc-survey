@@ -15,16 +15,46 @@
     <p id="description">A Survey Form project for Free Code Camp</p>
     <form id="survey-form">
         <label for="name" id="name-label">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="name" placeholder="Enter your name" required>
         <br>
         <br>
         <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" placeholder="Enter your Email">
+        <input type="email" id="email" placeholder="Enter your Email" required>
         <br>
         <br>
         <label for="age" id="number-label">Age:</label>
-        <input type="number" id="age" placeholder="Age">
+        <input type="number" id="number" placeholder="Age" min="18" max="120">
+        <br>
+        <br>
+        <label for="age" id="dropdown-label">Which option best describes your current role?</label>
+        <select name="role" id="dropdown">
+            <option value="volvo">Student</option>
+            <option value="saab">Full-Time</option>
+            <option value="fiat">Part-Time</option>
+
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+        <br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car
+        <br>
+        <br>
+        <input type="radio" name="gender" value="male" checked>Male
+        <br>
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <label for="textarea">Comments or suggestions?</label>
+        <br>
+        <br>
+        <textarea name="textarea" id="textarea" cols="45" rows="10" placeholder="Enter your comments here..."></textarea>
+        <br>
+        <br>
+        <button id="submit">Submit</button>
+        <br>
+        <br>
     </form>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </body>
 
 </html>
